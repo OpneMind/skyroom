@@ -9,8 +9,8 @@
             "homepage": "http://author.com"
         }
     ],
-    "homepage": "https://github.com/moladoust/skyroomlaravel",
-    "keywords": ["Laravel", "Skyroomlaravel"],
+    "homepage": "https://github.com/OpneMind/skyroom",
+    "keywords": ["Laravel", "Skyroom"],
     "require": {
         "illuminate/support": "^7.0|^8.0|^9.0|^10.0"
     },
@@ -20,21 +20,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Moladoust\\Skyroomlaravel\\": "src/"
+            "OpneMind\\Skyroom\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Moladoust\\Skyroomlaravel\\Tests\\": "tests"
+            "OpneMind\\Skyroom\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Moladoust\\Skyroomlaravel\\SkyroomlaravelServiceProvider"
+                "OpneMind\\Skyroom\\SkyroomServiceProvider"
             ],
             "aliases": {
-                "Skyroomlaravel": "Moladoust\\Skyroomlaravel\\Facades\\Skyroomlaravel"
+                "Skyroom": "OpneMind\\Skyroom\\Facades\\Skyroom"
             }
         }
     }
