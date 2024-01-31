@@ -1,6 +1,6 @@
 <?php
 
-namespace Moladoust\Skyroomlaravel;
+namespace OpneMind\Skyroom;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -31,11 +31,11 @@ class SkyroomlaravelServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/skyroomlaravel.php', 'skyroomlaravel');
+        $this->mergeConfigFrom(__DIR__.'/../config/skyroom.php', 'skyroom');
 
         // Register the service the package provides.
-        $this->app->singleton('skyroomLaravel', function ($app) {
-            return new SkyroomLaravel(config('skyroomlaravel.api_url'));
+        $this->app->singleton('skyroom', function ($app) {
+            return new Skyroom(config('skyroom.api_url'));
         });
 
         $this->app->singleton('SkyroomGenerate', function ($app) {
@@ -50,7 +50,7 @@ class SkyroomlaravelServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['skyroomlaravel'];
+        return ['skyroom'];
     }
 
     /**
@@ -62,23 +62,23 @@ class SkyroomlaravelServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/skyroomlaravel.php' => config_path('skyroomlaravel.php'),
-        ], 'skyroomlaravel.config');
+            __DIR__.'/../config/skyroom.php' => config_path('skyroom.php'),
+        ], 'skyroom.config');
 
         // Publishing the views.
         /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/moladoust'),
-        ], 'skyroomlaravel.views');*/
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/OpneMind'),
+        ], 'skyroom.views');*/
 
         // Publishing assets.
         /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/moladoust'),
-        ], 'skyroomlaravel.views');*/
+            __DIR__.'/../resources/assets' => public_path('vendor/OpneMind'),
+        ], 'skyroom.views');*/
 
         // Publishing the translation files.
         /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/moladoust'),
-        ], 'skyroomlaravel.views');*/
+            __DIR__.'/../resources/lang' => resource_path('lang/vendor/OpneMind'),
+        ], 'skyroom.views');*/
 
         // Registering package commands.
         // $this->commands([]);
