@@ -1,6 +1,6 @@
 <?php
 
-namespace Moladoust\Skyroomlaravel\Api;
+namespace OpneMind\Skyroom\Api;
 
 class HttpError
 {
@@ -21,6 +21,6 @@ class HttpError
     }
 
     static function IsError(&$input) {
-        return is_object($input) && (get_class($input) === 'Moladoust\Skyroomlaravel\Api\HttpError');
+        return is_object($input) && (get_class($input) === 'OpneMind\Skyroom\Api\HttpError');
     }
 }
