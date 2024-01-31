@@ -1,6 +1,6 @@
 <?php
 
-namespace Moladoust\Skyroomlaravel\Facades;
+namespace OpneMind\Skyroom\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
