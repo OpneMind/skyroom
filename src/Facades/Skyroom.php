@@ -1,10 +1,10 @@
 <?php
 
-namespace Moladoust\Skyroomlaravel\Facades;
+namespace OpneMind\Skyroom\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class SkyroomLaravel extends Facade
+class Skyroom extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class SkyroomLaravel extends Facade
      */
     protected static function getFacadeAccessor(): string
     {
-        return 'skyroomLaravel';
+        return 'skyroom';
     }
 }
