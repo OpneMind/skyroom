@@ -1,6 +1,6 @@
 <?php
 
-namespace Moladoust\Skyroomlaravel\Api;
+namespace OpneMind\Skyroom\Api;
 
 
 class JsonException extends \Exception
