@@ -1,10 +1,10 @@
 <?php
 
-namespace Moladoust\Skyroomlaravel\Api;
+namespace OpneMind\Skyroom\Api;
 
 use Exception;
-use Moladoust\Skyroomlaravel\Api\HttpRequest;
-use Moladoust\Skyroomlaravel\Api\HttpError;
+use OpneMind\Skyroom\Api\HttpRequest;
+use OpneMind\Skyroom\Api\HttpError;
 
 
 class Skyroom
