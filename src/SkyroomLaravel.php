@@ -1,12 +1,12 @@
 <?php
 
-namespace Moladoust\Skyroomlaravel;
+namespace OpneMind\Skyroom;
 
-use Moladoust\Skyroomlaravel\Api\Skyroom;
-use Moladoust\Skyroomlaravel\Api\HttpError;
+use OpneMind\Skyroom\Api\Skyroom;
+use OpneMind\Skyroom\Api\HttpError;
 
 
-class SkyroomLaravel
+class Skyroom
 {
     private $api;
 
