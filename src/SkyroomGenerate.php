@@ -1,8 +1,8 @@
 <?php
 
-namespace Moladoust\Skyroomlaravel;
+namespace OpneMind\Skyroom;
 
-use Moladoust\Skyroomlaravel\Api\Skyroom;
+use OpneMind\Skyroom\Api\Skyroom;
 
 class SkyroomGenerate {
 
